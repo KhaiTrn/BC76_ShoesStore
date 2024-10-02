@@ -17,10 +17,11 @@ function renderData(arr) {
   let content = "";
   let newArr = arr.slice(0, 6);
   for (let field of newArr) {
-    const { id, image } = field;
-    content += `<div>
-      <img src="${image}" alt="">
+    const { id, name, image } = field;
+    content += `<div class ="col-4 text-center">
+      <img style="width: 100%;" src="${image}" alt="">
+      <h2>${name}</h2>
     </div>`;
   }
-  document.querySelector(".container_a").innerHTML = content;
+  document.querySelector(".banner_content").innerHTML = content;
 }

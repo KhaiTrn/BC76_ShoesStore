@@ -23,6 +23,14 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <!-- font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- animate -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -70,30 +78,81 @@
       </div>
     </header>
     <main>
-      <div class="container_a flex"></div>
+      <section id="banner">
+        <div class="container">
+          <div class="banner_content row"></div>
+        </div>
+      </section>
+      <div class="banner row"></div>
       <section id="collection">
         <div class="container">
-          <div class="collection_title">
-            <div class="title_icon"></div>
-            <div class="title_content">
-              <h4>Wanna more from us. Don't worry!</h4>
-              <p>
-                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-                esse molestie consequat vero eros et accumsan
-              </p>
+          <div
+            class="collection_content d-flex justify-content-between align-items-center"
+          >
+            <div
+              class="collection_title d-flex justify-content-start align-items-center"
+            >
+              <div class="title_icon"><i class="fa-solid fa-rocket"></i></div>
+              <div class="title_content">
+                <h4>Wanna more from us. Don't worry!</h4>
+                <p>
+                  Duis autem vel eum iriure dolor in hendrerit in vulputate
+                  velit esse molestie consequat vero eros et accumsan
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="collection_button">
-            <button class="btn btn-danger">View all collections</button>
+            <div class="collection_button">
+              <button>View all collections</button>
+            </div>
           </div>
         </div>
       </section>
       <section id="services">
         <div class="container">
-          <div class="service_content">
-            <div class="service_item"></div>
-            <div class="service_item"></div>
-            <div class="service_item"></div>
+          <div class="service_content row text-center">
+            <div class="service_item col-4">
+              <div class="item_icon"><i class="fa-solid fa-truck"></i></div>
+              <div class="item_content">
+                <h4><a href="#">FREE SHIPING</a></h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.
+                </p>
+              </div>
+            </div>
+            <div class="service_item col-4">
+              <div class="item_icon">
+                <i class="fa-solid fa-headphones-simple"></i>
+              </div>
+              <div class="item_content">
+                <h4><a href="#">PREMIUM SUPPORT</a></h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.
+                </p>
+              </div>
+            </div>
+            <div class="service_item col-4">
+              <div class="item_icon"><i class="fa-solid fa-gift"></i></div>
+              <div class="item_content">
+                <h4><a href="#">MEMBER DISCOUNT</a></h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="free_trial">
+        <div class="container">
+          <div class="trial_content text-center">
+            <h2><a href="#">30 DAYS RETURN</a></h2>
+            <p class="text-white">Free exchange on any items in 30 days</p>
           </div>
         </div>
       </section>
@@ -181,8 +240,8 @@
               </ul>
             </div>
           </div>
-          <div class="social_media">
-            <ul class="d-flex justify-content-center">
+          <div class="footer_social">
+            <ul class="d-flex justify-content-center gap-4">
               <li>
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
               </li>
@@ -201,7 +260,7 @@
             </ul>
           </div>
           <div class="copy_right text-center">
-            <p>
+            <p class="mb-4">
               Ap shoes store © Copyright 2024.<a href="">Powered by Shopify</a>
             </p>
             <img src="./img/payment_2x.png" alt="" />
@@ -209,9 +268,7 @@
         </div>
       </section>
     </footer>
-    <a class="back_to_top cd-top text-replace js-cd-top" href="#"
-      ><i class="fa fa-arrow-up"></i
-    ></a>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -231,8 +288,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- BACK TO TOP -->
-    <script src="./js/back-to-top-master/assets/js/main.js"></script>
-    <script src="./js/back-to-top-master/assets/js/util.js"></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
       integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
