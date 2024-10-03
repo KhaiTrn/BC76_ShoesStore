@@ -19,8 +19,8 @@ function renderData(arr) {
   for (let field of arr) {
     const { id, name, price, shortDescription, image } = field;
     content += `<div class ="product_item col-3 text-center">
-      <a href=""><img src="${image}" alt=""></a>
-      <h4><a href="#">${name}</a></h4>
+      <a href="./detail.html?productid=${id}"><img src="${image}" alt=""></a>
+      <h4><a href="./detail.html?productid=${id}">${name}</a></h4>
       <p class= "description">${shortDescription}</p>
       <p class = "text-danger">$ ${price}</p>
     </div>`;
