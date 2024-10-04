@@ -86,4 +86,13 @@ footer .footer_content .footer_item li p {
   /* // back-to-top button visible */
   visibility: visible;
   opacity: 1;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.nav a i {
+  color: #272727;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+.nav a i:hover {
+  color: #f55f8d;
+} /*# sourceMappingURL=index.css.map */

@@ -83,3 +83,27 @@ footer {
   visibility: visible;
   opacity: 1;
 }
+/* nav */
+.nav-menu {
+  li {
+    a {
+      font-size: 20px;
+      transition: all 0.3s;
+      &:hover {
+        color: #f55f8d;
+      }
+    }
+  }
+}
+.nav {
+  a {
+    i {
+      color: #272727;
+      transition: all 0.5s;
+      font-size: 20px;
+      &:hover {
+        color: #f55f8d;
+      }
+    }
+  }
+}

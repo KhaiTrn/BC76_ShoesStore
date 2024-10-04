@@ -42,13 +42,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- (Optional) Use CSS or JS implementation -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
-      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -66,11 +59,51 @@
         <div class="header_logo">
           <img src="./img/logo_2x.png" alt="" />
         </div>
-        <nav></nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 nav-menu">
+              <li class="nav-item home">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item link">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="row nav me-5">
+              <a href="./register.html" class="col-6 user">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <a href="#" class="col-6 cart">
+                <i class="fa-solid fa-cart-plus"></i>
+              </a>
+            </form>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
-      <div class="container_a flex"></div>
+      <div class="container container_a row">`;</div>
       <section id="collection">
         <div class="container">
           <div class="collection_title">
@@ -243,6 +276,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
+    <script src="./model/FormRegister.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
