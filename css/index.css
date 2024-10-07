@@ -5,6 +5,23 @@
   font-family: "Oswald", sans-serif;
 }
 
+#banner_detail {
+  background-image: url(../../img/breadcrum-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 114px 38px;
+  text-align: center;
+}
+#banner_detail p {
+  font-weight: 400;
+  color: #8a8a8a;
+  font-size: 14px;
+}
+#banner_detail p span {
+  font-size: 20px;
+  color: #e24647;
+}
+
 .trial_content:hover p,
 .trial_content:hover a {
   letter-spacing: 2px;
@@ -81,6 +98,24 @@
   background-color: #e24647;
 }
 
+.size.click {
+  color: white;
+  background-color: black;
+}
+
+.size {
+  background-color: #c1af8a;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #272727;
+  transition: all 0.5s;
+}
+.size:hover {
+  color: white;
+  background-color: black;
+}
+
 body {
   color: #8a8a8a;
 }
@@ -125,6 +160,29 @@ p {
     margin: 0 auto;
   }
 }
+#product_detail img {
+  width: 100%;
+}
+#product_detail #detail_product .detail_img {
+  width: 45%;
+}
+#product_detail #detail_product .detail_info {
+  width: 60%;
+}
+#product_detail .btn-style {
+  padding: 0 12px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.product_relate_item img {
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.product_relate_item img:hover {
+  transform: scale(1.5, 1.5);
+}
+
 #services {
   padding: 60px 0;
 }

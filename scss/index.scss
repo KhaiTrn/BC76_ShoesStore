@@ -4,6 +4,7 @@
 @import "./theme/banner";
 @import "./layout/product";
 @import "./layout/collection";
+@import "./components/button_size";
 body {
   color: #8a8a8a;
 }
@@ -43,7 +44,32 @@ p {
     margin: 0 auto;
   }
 }
-#banner_detail {
+#product_detail {
+  img {
+    width: 100%;
+  }
+  #detail_product {
+    .detail_img {
+      width: 45%;
+    }
+    .detail_info {
+      width: 60%;
+    }
+  }
+  .btn-style {
+    padding: 0 12px;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}
+.product_relate_item {
+  img {
+    transform: scale(1);
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.5, 1.5);
+    }
+  }
 }
 #services {
   padding: 60px 0;

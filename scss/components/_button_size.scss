@@ -1,0 +1,16 @@
+.size.click {
+  color: white;
+  background-color: black;
+}
+.size {
+  background-color: $bg-background-gray;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: $color-black;
+  transition: all 0.5s;
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+}
