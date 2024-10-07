@@ -88,11 +88,33 @@ footer .footer_content .footer_item li p {
   opacity: 1;
 }
 
-.nav a i {
-  color: #272727;
+/* nav */
+.nav-menu li a {
   font-size: 20px;
   transition: all 0.3s;
 }
+.nav-menu li a:hover {
+  color: #f55f8d;
+}
+
+.nav a i {
+  color: #272727;
+  transition: all 0.5s;
+  font-size: 20px;
+}
 .nav a i:hover {
   color: #f55f8d;
-} /*# sourceMappingURL=index.css.map */
+}
+
+#form-register h2 {
+  color: #f54134;
+}
+#form-register h4 {
+  color: #272727;
+}
+#form-register label {
+  color: #272727;
+}
+#form-register span {
+  color: #f54134;
+}/*# sourceMappingURL=index.css.map */

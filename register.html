@@ -70,10 +70,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 nav-menu">
               <li class="nav-item home">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
+                <a class="nav-link" aria-current="page" href="./index.html"
                   >Home</a
                 >
               </li>
@@ -113,7 +110,7 @@
           </div>
         </nav>
       </header>
-      <form action="" class="mt-5 register">
+      <form id="form-register" class="mt-5">
         <h2 class="text-center">Register</h2>
         <div class="row">
           <div class="col-6">
@@ -127,6 +124,7 @@
                 aria-describedby="helpId"
                 placeholder="Vui lòng nhập email"
               />
+              <span id="tb-email"></span>
             </div>
           </div>
           <div class="col-6">
@@ -136,10 +134,11 @@
                 type="text"
                 class="form-control"
                 name=""
-                id="hoTen"
+                id="name"
                 aria-describedby="helpId"
                 placeholder="Vui lòng nhập họ tên"
               />
+              <span id="tb-name"></span>
             </div>
           </div>
           <div class="col-6">
@@ -152,7 +151,9 @@
                 id="password"
                 aria-describedby="helpId"
                 placeholder="Vui lòng nhập mật khẩu"
+                data-password="password"
               />
+              <span id="tb-password"></span>
             </div>
           </div>
           <div class="col-6">
@@ -162,10 +163,11 @@
                 type="number"
                 class="form-control"
                 name=""
-                id="soDienThoai"
+                id="phone"
                 aria-describedby="helpId"
                 placeholder="Vui lòng nhập số điện thoại"
               />
+              <span id="tb-phone"></span>
             </div>
           </div>
           <div class="col-6">
@@ -174,41 +176,53 @@
                 >Password confirm
               </label>
               <input
-                type="text"
+                type="password"
                 class="form-control"
-                name=""
-                id="passwordConfirm"
+                name="passwordConfirm"
+                id=""
                 aria-describedby="helpId"
                 placeholder="Vui lòng nhập lại mật khẩu"
               />
+              <span id="tb-passwordConfirm"></span>
             </div>
           </div>
-          <div class="col-3">
-            <h4 class="d-inline-block mt-4 me-2">Gender</h4>
 
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="option"
-                id="male"
-                value="male"
-              />
-              <label class="form-check-label" for="">Male</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="option"
-                id="female"
-                value="female"
-              />
-              <label class="form-check-label" for="">Female</label>
+          <div class="col-3">
+            <div class="gender-form">
+              <h4 class="d-inline-block mt-4 me-2">Gender</h4>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="option"
+                  id=""
+                  value="Male"
+                />
+                <label class="form-check-label" for="">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="option"
+                  id=""
+                  value="Female"
+                />
+                <label class="form-check-label" for="">Female</label>
+              </div>
+              <span id="tb-gender"></span>
             </div>
           </div>
-          <div class="col-3 mt-4">
-            <button class="btn btn-primary" id="submit">Submit</button>
+          <div class="col-1 mt-4">
+            <button type="submit" class="btn btn-primary" id="submit">
+              Submit
+            </button>
+          </div>
+          <div class="col-2 mt-4">
+            <span id="thongBao" style="display: none" class="text-primary"
+              >hello</span
+            >
           </div>
         </div>
       </form>
@@ -225,6 +239,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./model/FormRegister.js"></script>
+    <script src="./validation/validation.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

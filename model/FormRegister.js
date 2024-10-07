@@ -1,8 +1,8 @@
 class FormRegister {
   email = "";
-  hoTen = "";
+  name = "";
   password = "";
-  soDienThoa = "";
+  phone = "";
   passwordConfirm = "";
   gender = "";
 }
