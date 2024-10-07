@@ -31,7 +31,7 @@ function render(arr, classList) {
       const { name, price, image } = field;
       content += `<div class = "product_relate_item">
       <a href="javascript:void(0)" onclick="changeMainImage('${image}','${name}','${price}')"><img width="60%" src="${image}" alt=""></a>
-      <h4><a href="javascript:void(0)" onclick="changeMainImage('${image}','${name}','${price}')">${name}</a></h4>
+      <h4><a class="text-uppercase" href="javascript:void(0)" onclick="changeMainImage('${image}','${name}','${price}')">${name}</a></h4>
       <p class="price text-danger fs-4">$ ${price}</p>
       </div>`;
     }

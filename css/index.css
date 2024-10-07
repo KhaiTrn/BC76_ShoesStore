@@ -51,6 +51,11 @@
 
 .product_item img {
   width: 90%;
+  transform: scale(1, 1);
+  transition: all 0.5s;
+}
+.product_item img:hover {
+  transform: scale(1.1, 1.1);
 }
 .product_item a {
   font-size: 24px;
@@ -180,7 +185,7 @@ p {
   transition: all 0.5s;
 }
 .product_relate_item img:hover {
-  transform: scale(1.5, 1.5);
+  transform: scale(1.1, 1.1);
 }
 
 #services {
@@ -304,4 +309,52 @@ footer .footer_social ul li a {
 }
 footer .footer_social ul li a:hover {
   color: #e24647;
+}
+
+/* BACK TO TOP */
+.back_to_top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f55f8d;
+  color: white;
+  border-radius: 8px;
+  box-shadow: -4px 4px 24px -10px #f55f8d;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cd-top--is-visible {
+  /* // back-to-top button visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+/* KEYFRAME */
+@keyframes move {
+  0% {
+    transform: rotate(1deg) translate(2px, 2px);
+  }
+  50% {
+    transform: rotate(-1deg) translate(-2px, -2px);
+  }
+  100% {
+    transform: rotate(1deg) translate(2px, 2px);
+  }
+}
+@keyframes UpToDown {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=index.css.map */
