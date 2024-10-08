@@ -3,3 +3,41 @@
   color: $color;
   font-size: $fs;
 }
+
+@mixin styleButton(
+  $color,
+  $bg,
+  $border,
+  $hover: true,
+  $bg-hover,
+  $color-hover
+) {
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: 2px solid $border;
+  background-color: $bg;
+  color: $color;
+  transition: all 0.3s;
+  @if $hover {
+    &:hover {
+      background-color: $bg-hover;
+      color: $color-hover;
+    }
+  }
+}
+@mixin StyleButtonCongTru($border: true, $none) {
+  padding: 0 12px;
+  border: 1px solid black;
+  background-color: white;
+  &:hover {
+    background-color: $bg-button-hover;
+  }
+  background-color: white;
+  @if $border {
+    border-right: $none;
+    border-radius: 3px 0 0 3px;
+  } @else {
+    border-left: $none;
+    border-radius: 0 3px 3px 0;
+  }
+}

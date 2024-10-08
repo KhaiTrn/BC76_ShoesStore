@@ -18,7 +18,8 @@ function renderData(arr) {
   let content = "";
   for (let field of arr) {
     const { id, name, price, shortDescription, image } = field;
-    content += `<div class ="product_item col-3 text-center">
+    content += `<div class ="product_item col-lg-3
+    col-md-4 col-sm-6 col-xs-12 text-center wow animate__animated animate__bounceInUp">
       <a href="./detail.html?productid=${id}"><img src="${image}" alt=""></a>
       <h4><a href="./detail.html?productid=${id}">${name}</a></h4>
       <p class= "description">${shortDescription}</p>

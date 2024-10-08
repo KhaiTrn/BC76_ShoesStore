@@ -25,11 +25,11 @@ window.onload = function () {
 };
 function render(arr, classList) {
   let content = "";
-  content += `<div class = "relatedProducts d-flex text-center">`;
+  content += `<div class = "relatedProducts row text-center">`;
   for (let i = 0; i < arr.length; i++) {
     for (let field of [arr[i]]) {
       const { name, price, image } = field;
-      content += `<div class = "product_relate_item">
+      content += `<div class = "product_relate_item col-lg-4 col-md-6 col-12">
       <a href="javascript:void(0)" onclick="changeMainImage('${image}','${name}','${price}')"><img width="60%" src="${image}" alt=""></a>
       <h4><a class="text-uppercase" href="javascript:void(0)" onclick="changeMainImage('${image}','${name}','${price}')">${name}</a></h4>
       <p class="price text-danger fs-4">$ ${price}</p>
@@ -58,7 +58,7 @@ function renderDataDetail(arr) {
       content += `<button onclick="selectSize(this)" class="size mx-1">${i}</button>`;
     }
     content += `<div class="button_cart mt-3">
-    <button onclick="congTruCart('tang')" class="btn text-center">
+    <button onclick="congTruCart('tang')" class="cong text-center">
       +
     </button>
     <input
@@ -68,13 +68,13 @@ function renderDataDetail(arr) {
       value="1"
       min="1"
     />
-    <button onclick="congTruCart('giam')" class="btn text-center">
+    <button onclick="congTruCart('giam')" class="tru text-center">
       -
     </button>
   </div>
   <div class="button_add">
-    <button class="">ADD TO CARD</button>
-    <button class ="">BUY IT NOW</button>
+  <button class ="btnBuy">BUY IT NOW</button>
+    <button class="btnAdd mb-3">ADD TO CARD</button>
   </div>`;
     content += `</div>`;
     document.querySelector(".title").innerHTML = `${name}`;

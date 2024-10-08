@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>KT Shoes Store</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -87,7 +87,7 @@
       <section id="collection">
         <div class="container">
           <div
-            class="collection_content d-flex justify-content-between align-items-center"
+            class="collection_content d-flex justify-content-lg-between flex-wrap align-items-center wow animate__animated animate__slideInLeft"
           >
             <div
               class="collection_title d-flex justify-content-start align-items-center"
@@ -101,16 +101,19 @@
                 </p>
               </div>
             </div>
-            <div class="collection_button">
+            <div class="collection_button mt-4">
               <button>View all collections</button>
             </div>
           </div>
         </div>
       </section>
-      <section id="services">
+      <section
+        id="services"
+        class="wow animate__animated animate__slideInRight"
+      >
         <div class="container">
           <div class="service_content row text-center">
-            <div class="service_item col-4">
+            <div class="service_item col-lg-4 col-md-6 col-sm-12">
               <div class="item_icon"><i class="fa-solid fa-truck"></i></div>
               <div class="item_content">
                 <h4><a href="#">FREE SHIPING</a></h4>
@@ -121,7 +124,7 @@
                 </p>
               </div>
             </div>
-            <div class="service_item col-4">
+            <div class="service_item col-lg-4 col-md-6 col-sm-12">
               <div class="item_icon">
                 <i class="fa-solid fa-headphones-simple"></i>
               </div>
@@ -134,7 +137,7 @@
                 </p>
               </div>
             </div>
-            <div class="service_item col-4">
+            <div class="service_item col-lg-4 col-md-6 col-sm-12">
               <div class="item_icon"><i class="fa-solid fa-gift"></i></div>
               <div class="item_content">
                 <h4><a href="#">MEMBER DISCOUNT</a></h4>
@@ -161,7 +164,9 @@
     <footer>
       <section id="footer">
         <div class="container">
-          <div class="footer_content text-center row">
+          <div
+            class="footer_content text-center row wow animate__animated animate__slideInUp"
+          >
             <div
               class="footer_item col-lg-2 col-md-2 col-sm-4 col-xs-12 col-sp-12"
             >
@@ -240,7 +245,9 @@
               </ul>
             </div>
           </div>
-          <div class="footer_social">
+          <div
+            class="footer_social wow animate__animated animate__slideInRight"
+          >
             <ul class="d-flex justify-content-center gap-4">
               <li>
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -259,7 +266,9 @@
               </li>
             </ul>
           </div>
-          <div class="copy_right text-center">
+          <div
+            class="copy_right text-center py-3 wow animate__animated animate__slideInUp"
+          >
             <p class="mb-4">
               Ap shoes store © Copyright 2024.<a href="">Powered by Shopify</a>
             </p>
@@ -289,7 +298,16 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <!-- BACK TO TOP -->
+    <!-- WOW CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
