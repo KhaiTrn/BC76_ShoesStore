@@ -1,0 +1,37 @@
+#free_trial {
+  padding: 70px 0;
+  background-position: center top;
+  background-image: url(./../img/htmlbottom-bg.jpg);
+  background-size: cover;
+  transition: all 0.5s;
+  background-attachment: fixed;
+  h2 {
+    position: relative;
+    @include styleText(600, white, 60px);
+    margin: 50px 0 70px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: -38px;
+      width: 80px;
+      height: 1px;
+      background-color: white;
+      transition: all 0.5s;
+    }
+    a {
+      @include styleText(600, white, 60px);
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+  p {
+    transition: all 0.5s;
+    font-size: 20px;
+  }
+}

@@ -3,7 +3,13 @@
 @import "./helper/mixin";
 @import "./theme/banner";
 @import "./layout/product";
+@import "./layout/services";
+@import "./layout/free_trial";
+@import "./layout/footer";
 @import "./layout/collection";
+@import "./layout/detail_banner";
+@import "./layout/product_detail";
+@import "./layout/detail_relate_product";
 @import "./components/button_size";
 body {
   color: #8a8a8a;
@@ -75,155 +81,7 @@ p {
     @include StyleButtonCongTru(false, none);
   }
 }
-//product_detail
-#product_detail {
-  img {
-    width: 100%;
-  }
-  #detail_product {
-    .detail_img {
-      width: 45%;
-    }
-    .detail_info {
-      width: 60%;
-    }
-  }
-  .btn-style {
-    padding: 0 12px;
-    text-align: center;
-    border: 1px solid transparent;
-  }
-}
-.product_relate_item {
-  img {
-    transform: scale(1);
-    transition: all 0.5s;
-    &:hover {
-      transform: scale(1.1, 1.1);
-    }
-  }
-}
-#services {
-  padding: 60px 0;
-  .item_icon {
-    color: $color-black;
-    background-color: $bg-icon;
-    width: 86px;
-    height: 86px;
-    line-height: 86px;
-    border-radius: 50%;
-    margin: 30px auto;
-    &:hover {
-      color: $hover-color;
-    }
-    svg {
-      font-size: 22px;
-    }
-  }
-  .item_content {
-    a {
-      @include styleText(600, $color-black, 15px);
-      &:hover {
-        color: $hover-color;
-      }
-    }
-  }
-}
-#free_trial {
-  padding: 70px 0;
-  background-position: center top;
-  background-image: url(./../img/htmlbottom-bg.jpg);
-  background-size: cover;
-  transition: all 0.5s;
-  background-attachment: fixed;
-  h2 {
-    position: relative;
-    @include styleText(600, white, 60px);
-    margin: 50px 0 70px;
 
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      bottom: -38px;
-      width: 80px;
-      height: 1px;
-      background-color: white;
-      transition: all 0.5s;
-    }
-    a {
-      @include styleText(600, white, 60px);
-      &:hover {
-        color: $hover-color;
-      }
-    }
-  }
-  p {
-    transition: all 0.5s;
-    font-size: 20px;
-  }
-}
-footer {
-  padding: 30px 0;
-  .footer_content {
-    display: flex;
-    justify-content: flex-start;
-    .footer_item {
-      padding: 0 9px;
-      h4 {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.1;
-        color: #272727;
-        padding: 15px 0;
-        text-transform: uppercase;
-        margin: 0;
-      }
-      li {
-        padding: 5px 0;
-        p {
-          margin: 3px;
-          font-size: 14px;
-        }
-      }
-    }
-  }
-  .footer_social {
-    position: relative;
-    padding: 20px 0;
-    margin-bottom: 30px;
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      width: 100px;
-      height: 1px;
-      margin: 0 auto;
-      background-color: #ddd;
-    }
-    ul {
-      margin: 20px 0;
-      li {
-        a {
-          font-size: $fs-icon;
-          color: $color-black;
-          width: 40px;
-          height: 40px;
-          line-height: 38px;
-          display: block;
-          &:hover {
-            color: $hover-color;
-          }
-        }
-      }
-    }
-  }
-}
 /* BACK TO TOP */
 .back_to_top {
   position: fixed;

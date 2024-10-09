@@ -1,0 +1,9 @@
+.product_relate_item {
+  img {
+    transform: scale(1);
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}

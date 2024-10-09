@@ -26,5 +26,5 @@ function renderData(arr) {
       <p class = "text-danger">$ ${price}</p>
     </div>`;
   }
-  document.querySelector(".banner_content").innerHTML = content;
+  document.querySelector(".product_content").innerHTML = content;
 }

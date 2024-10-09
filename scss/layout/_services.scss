@@ -1,0 +1,26 @@
+#services {
+  padding: 60px 0;
+  .item_icon {
+    color: $color-black;
+    background-color: $bg-icon;
+    width: 86px;
+    height: 86px;
+    line-height: 86px;
+    border-radius: 50%;
+    margin: 30px auto;
+    &:hover {
+      color: $hover-color;
+    }
+    svg {
+      font-size: 22px;
+    }
+  }
+  .item_content {
+    a {
+      @include styleText(600, $color-black, 15px);
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}

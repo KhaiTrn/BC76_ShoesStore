@@ -1,0 +1,14 @@
+#banner_detail {
+  background-image: url(../../img/breadcrum-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 114px 38px;
+  text-align: center;
+  p {
+    @include styleText(400, $bg-background, $fs-title-1);
+    span {
+      font-size: 20px;
+      color: $hover-color;
+    }
+  }
+}

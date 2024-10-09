@@ -1,0 +1,18 @@
+#product_detail {
+  img {
+    width: 100%;
+  }
+  #detail_product {
+    .detail_img {
+      width: 45%;
+    }
+    .detail_info {
+      width: 60%;
+    }
+  }
+  .btn-style {
+    padding: 0 12px;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}
