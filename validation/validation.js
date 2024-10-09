@@ -53,6 +53,9 @@ function checkPhone(valuePhone, theThongBao) {
   } else if (valuePhone.length !== 10) {
     theThongBao.innerHTML = "Vui lòng nhập đúng 10 số điện thoại";
     return false;
+  } else {
+    theThongBao.innerHTML = "";
+    return true;
   }
   const phoneRegex = /^(03|05|07|08|09)\d{8}$/;
   if (!phoneRegex.test(valuePhone)) {

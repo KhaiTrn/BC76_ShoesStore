@@ -101,6 +101,7 @@ footer .footer_content .footer_item li p {
   color: #272727;
   transition: all 0.5s;
   font-size: 20px;
+  margin-right: 20px;
 }
 .nav a i:hover {
   color: #f55f8d;
