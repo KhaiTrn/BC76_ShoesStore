@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +33,9 @@
   -o-transform: rotate(-45deg);
 }
 
+.product_item {
+  display: block;
+}
 .product_item img {
   width: 90%;
   transform: scale(1, 1);
@@ -90,7 +94,8 @@
   font-size: 60px;
   margin: 50px 0 70px;
 }
-#free_trial h2::after, #free_trial h2::before {
+#free_trial h2::after,
+#free_trial h2::before {
   content: "";
   position: absolute;
   margin: 0 auto;
@@ -146,7 +151,8 @@ footer .footer_social {
   padding: 20px 0;
   margin-bottom: 30px;
 }
-footer .footer_social::before, footer .footer_social::after {
+footer .footer_social::before,
+footer .footer_social::after {
   content: "";
   position: absolute;
   left: 0;
@@ -265,6 +271,19 @@ footer .footer_social ul li a:hover {
 .size:hover {
   color: white;
   background-color: black;
+}
+
+#form-register h2 {
+  color: #f54134;
+}
+#form-register h4 {
+  color: #272727;
+}
+#form-register label {
+  color: #272727;
+}
+#form-register span {
+  color: #f54134;
 }
 
 body {
@@ -415,4 +434,67 @@ p {
   51% {
     opacity: 1;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+.nav-menu li a {
+  font-size: 20px;
+  transition: all 0.3s;
+}
+.nav-menu li a:hover {
+  color: #f55f8d;
+}
+
+.nav a i {
+  color: #272727;
+  transition: all 0.5s;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.nav a i:hover {
+  color: #f55f8d;
+}
+
+#banner .bg {
+  background-image: url(./../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-position: bottom center;
+}
+#banner .content_banner .text_content h2 {
+  font-size: 36px;
+  color: #e24647;
+}
+#banner .content_banner .text_content p {
+  font-size: 20px;
+  color: #272727;
+}
+@media (max-width: 768px) {
+  #banner .bg {
+    height: 70vh;
+    width: 100vw; /* Giảm chiều cao */
+    background-position: center bottom;
+  }
+  #banner .content_banner .text_content h2 {
+    font-size: 28px; /* Giảm kích thước chữ tiêu đề */
+  }
+  #banner .content_banner .text_content p {
+    font-size: 16px; /* Giảm kích thước chữ đoạn văn */
+  }
+}
+@media (max-width: 480px) {
+  #banner .bg {
+    height: 50vh;
+    width: 100%; /* Giảm chiều cao thêm */
+    background-position: center bottom; /* Căn ảnh lên trên */
+  }
+  #banner .content_banner .text_content h2 {
+    font-size: 22px; /* Giảm kích thước chữ tiêu đề */
+  }
+  #banner .content_banner .text_content p {
+    font-size: 14px; /* Giảm kích thước chữ đoạn văn */
+  }
+} /*# sourceMappingURL=index.css.map */
