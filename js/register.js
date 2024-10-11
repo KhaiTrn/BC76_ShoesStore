@@ -21,6 +21,10 @@ function getDataValue(arr = arrFormRegister) {
     //  let passwordValue=field.getAttribute("data-password").value;
     console.log(theThongBao);
     if (type === "radio") {
+      if (!checked) {
+        document.getElementById("thongBao").innerHTML =
+          "vui lòng chọn giới tính";
+      }
       if (checked) {
         register.gender = value;
         if (register.gender === "Male") {
