@@ -94,8 +94,7 @@
   font-size: 60px;
   margin: 50px 0 70px;
 }
-#free_trial h2::after,
-#free_trial h2::before {
+#free_trial h2::after, #free_trial h2::before {
   content: "";
   position: absolute;
   margin: 0 auto;
@@ -151,8 +150,7 @@ footer .footer_social {
   padding: 20px 0;
   margin-bottom: 30px;
 }
-footer .footer_social::before,
-footer .footer_social::after {
+footer .footer_social::before, footer .footer_social::after {
   content: "";
   position: absolute;
   left: 0;
@@ -435,21 +433,27 @@ p {
     opacity: 1;
   }
 }
-.nav-menu li a {
+.navbar-collapse {
+  align-items: center;
+}
+.navbar-collapse .nav-menu li a {
   font-size: 20px;
   transition: all 0.3s;
 }
-.nav-menu li a:hover {
+.navbar-collapse .nav-menu li a:hover {
   color: #f55f8d;
 }
-
-.nav a i {
+.navbar-collapse .nav-menu li a img {
+  width: 70%;
+  height: auto;
+}
+.navbar-collapse .nav a i {
   color: #272727;
   transition: all 0.5s;
   font-size: 20px;
   margin-right: 20px;
 }
-.nav a i:hover {
+.navbar-collapse .nav a i:hover {
   color: #f55f8d;
 }
 
@@ -479,22 +483,22 @@ p {
     background-position: center bottom;
   }
   #banner .content_banner .text_content h2 {
-    font-size: 28px; /* Giảm kích thước chữ tiêu đề */
+    font-size: 28px;
   }
-  #banner .content_banner .text_content p {
-    font-size: 16px; /* Giảm kích thước chữ đoạn văn */
+  #banner .content_banner .text_content h2 p {
+    font-size: 16px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) and (max-width: 480px) {
   #banner .bg {
     height: 50vh;
-    width: 100%; /* Giảm chiều cao thêm */
-    background-position: center bottom; /* Căn ảnh lên trên */
+    width: 100%;
+    background-position: right bottom;
   }
   #banner .content_banner .text_content h2 {
-    font-size: 22px; /* Giảm kích thước chữ tiêu đề */
+    font-size: 22px;
   }
   #banner .content_banner .text_content p {
-    font-size: 14px; /* Giảm kích thước chữ đoạn văn */
+    font-size: 14px;
   }
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

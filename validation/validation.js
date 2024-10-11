@@ -34,8 +34,8 @@ function checkPasword(valuePassword, valuePasswordConfirm, theThongBao) {
 }
 
 //check name
-function checkName(name, theThongBao) {
-  if (!name.trim() === "") {
+function checkName(value, theThongBao) {
+  if (value.trim() === "") {
     theThongBao.innerHTML = "Không được để trống tên";
     return false;
   } else {

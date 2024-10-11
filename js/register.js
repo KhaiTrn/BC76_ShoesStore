@@ -60,20 +60,24 @@ function getDataValue(arr = arrFormRegister) {
         if (!checkName(value, theThongBao)) {
           flag = false;
         }
-      } else if (id === "email") {
+      }
+      if (id === "email") {
         if (!checkEmailValue(value, theThongBao)) {
           flag = false;
         }
-      } else if (id === "phone") {
+      }
+      if (id === "phone") {
         if (!checkPhone(value, theThongBao)) {
           flag = false;
         }
-      } else if (id === "password") {
+      }
+      if (id === "password") {
         if (!checkPasswordValue(value, theThongBao)) {
           flag = false;
         }
         register.password = value;
-      } else if (name === "passwordConfirm") {
+      }
+      if (name === "passwordConfirm") {
         if (!checkPasword(register.password, value, theThongBao)) {
           flag = false;
         }
@@ -102,33 +106,6 @@ function updateRegister(data) {
       console.log(err);
     });
 }
-
-// function thongBaoToast(thongBao, err = "success") {
-//   // này là khai báo function có tham số là thongBao và err được mặc định là success (nếu truyền cái khác thì nó sẽ nhận cái khác )
-//   let bgColor = err == "success" ? "success" : "red";
-//   // tạo một biến bgColor được gán giá trị bằng với
-//   // toán tử 3 ngôi trước khi gán dữ liệu nhé
-
-//   Toastify({
-//     text: thongBao, // này dắn nội dung là biến tb
-//     duration: 3000, // này time chạy
-//     // destination: "https://github.com/apvarun/toastify-js",=>
-//     // giống thẻ a href nó trỏ tới đâu
-
-//     // newWindow: true,=> là chưa hiểu
-//     // có mở một tab mới khi click vào toast không
-
-//     // 2 dòng này là nếu bạn đọc doc thì nó ghi là
-//     close: true, // này chức năng tự đóng true (này là hiện nút tắt hay không trên toast )
-//     gravity: "top", // `top` or `bottom`// 2 thằng này alf vị trí
-//     position: "right", // `left`, `center` or `right`
-//     stopOnFocus: true, // Prevents dismissing of toast on hover// này hiểu lờ mờ hơi trù tượng :D
-//     style: {
-//       background: bgColor,
-//     },
-//     onClick: function () {}, // Callback after click // này tạo sự kien onclick này nó tạo function oclick mà bỏ trông hết tham số chức năng v nó có ý nghĩa gì ta thật ra bỏ luôn dòng này cũng được :D nó chỉ là chức năng thêm cho bạn tùy biến toast thôi àaa
-//   }).showToast();
-// }
 
 function testThongBao(thongBao, thanhCong = "success") {
   let bgColor = (thanhCong = "success" ? "success" : "red");
