@@ -67,7 +67,7 @@
 #services .item_icon:hover {
   color: #e24647;
 }
-#services .item_icon svg {
+#services .item_icon i {
   font-size: 22px;
 }
 #services .item_content a {
