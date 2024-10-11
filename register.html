@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Register</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- cnd toasfy -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- OWL CAROUSEL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 nav-menu">
+                  <li class="header_logo">
+                    <a href="./index.html"
+                      ><img src="./img/logo_2x.png" alt=""
+                    /></a>
+                  </li>
+                  <li class="nav-item home">
+                    <a class="nav-link" aria-current="page" href="./index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item link">
+                    <a class="nav-link" href="./register.html">Register</a>
+                  </li>
+                </ul>
+                <form class="d-flex nav" role="search">
+                  <a href="#" class="col-6 user">
+                    <i class="fa-solid fa-user"></i>
+                  </a>
+                  <a href="#" class="col-6 cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <form id="form-register" class="mt-5">
+        <h2 class="text-center">Register</h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="email"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập email"
+              />
+              <span id="tb-email"></span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="hoTen" class="form-label">Họ tên</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="name"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập họ tên"
+              />
+              <span id="tb-name"></span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                name=""
+                id="password"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập mật khẩu"
+              />
+              <span id="tb-password"></span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="soDienThoai" class="form-label">Số điện thoại</label>
+              <input
+                type="number"
+                class="form-control"
+                name=""
+                id="phone"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập số điện thoại"
+              />
+              <span id="tb-phone"></span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="passwordConfirm" class="form-label"
+                >Password confirm
+              </label>
+              <input
+                id="passwordConfirm"
+                type="password"
+                class="form-control"
+                name="passwordConfirm"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập lại mật khẩu"
+                autocomplete="new-password"
+              />
+              <span id="tb-passwordConfirm"></span>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="gender-form">
+              <h4 class="d-inline-block mt-4 me-2">Gender</h4>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="option"
+                  id=""
+                  value="Male"
+                />
+                <label class="form-check-label" for="">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="option"
+                  id=""
+                  value="Female"
+                />
+                <label class="form-check-label" for="">Female</label>
+              </div>
+              <span id="tb-gender"></span>
+            </div>
+          </div>
+          <div class="col-1 mt-4">
+            <button type="submit" class="btn btn-primary" id="submit">
+              Submit
+            </button>
+          </div>
+          <div class="col-2 mt-4">
+            <span id="thongBao" class="text-primary"></span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <section id="footer">
+        <div class="container mt-5">
+          <div
+            class="footer_content text-center row wow animate__animated animate__slideInUp"
+          >
+            <div
+              class="footer_item col-lg-2 col-md-2 col-sm-4 col-xs-12 col-sp-12"
+            >
+              <h4>Your Account</h4>
+
+              <ul>
+                <li><a href="#">Running Shoes</a></li>
+                <li><a href="#">Football Shoes</a></li>
+                <li><a href="#">Basketball Shoes</a></li>
+                <li><a href="#">Volleyball Shoes</a></li>
+                <li><a href="#">Trainee Shoes</a></li>
+              </ul>
+            </div>
+            <div
+              class="footer_item col-lg-2 col-md-2 col-sm-4 col-xs-12 col-sp-12"
+            >
+              <h4>Information</h4>
+
+              <ul>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">F.A.Q</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Search Terms</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div
+              class="footer_item col-lg-2 col-md-2 col-sm-4 col-xs-12 col-sp-12"
+            >
+              <h4>Quick Links</h4>
+
+              <ul>
+                <li><a href="#">My orders</a></li>
+                <li><a href="#">My credit slips</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">My addresses</a></li>
+                <li><a href="#">My personal info</a></li>
+              </ul>
+            </div>
+            <div
+              class="footer_item col-lg-2 col-md-2 col-sm-4 col-xs-12 col-sp-12"
+            >
+              <h4>FOOTER LINKS</h4>
+
+              <ul>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Typo</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Wishlist</a></li>
+              </ul>
+            </div>
+            <div
+              class="footer_item col-lg-2 col-md-2 col-sm-4 col-xs-12 col-sp-12"
+            >
+              <h4>SERVICES</h4>
+
+              <ul>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Typo</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Wishlist</a></li>
+              </ul>
+            </div>
+            <div
+              class="footer_item col-lg-2 col-md-2 col-sm-4 col-xs-12 col-sp-12"
+            >
+              <h4>HAPPY HOURS</h4>
+
+              <ul>
+                <li><p>Monday Friday</p></li>
+                <li><p>8am-10pm</p></li>
+                <li><p>Saturday & Sunday</p></li>
+                <li><p>10am-8p.m</p></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="footer_social wow animate__animated animate__slideInRight"
+          >
+            <ul class="d-flex justify-content-center gap-4">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="copy_right text-center py-3 wow animate__animated animate__slideInUp"
+          >
+            <p class="mb-4">
+              Ap shoes store © Copyright 2024.<a href="">Powered by Shopify</a>
+            </p>
+            <img src="./img/payment_2x.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </footer>
+    <a class="back_to_top cd-top text-replace js-cd-top" href="#"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./model/FormRegister.js"></script>
+    <script src="./validation/validation.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="./validation/validation.js"></script>
+    <script src="./js/register.js"></script>
+  </body>
+</html>
